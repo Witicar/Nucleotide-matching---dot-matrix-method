@@ -12,5 +12,4 @@ def dot_matrix_algorithm(nucleotide_array_one, nucleotide_array_two):
         for index_in, item_in in enumerate(nucleotide_array_two):
             if item_out == item_in:
                 matrix[index_out][index_in] = 1
-    print(matrix)
     return matrix

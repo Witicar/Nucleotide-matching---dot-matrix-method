@@ -1,0 +1,14 @@
+<ButtonRoot>
+    Button:
+        text: "File 1"
+        pos_hint: {'right': 0.99, 'y': 0.08}
+        size_hint:[(root.width*0.2)/root.width, (root.height*0.06)/root.height] if root.top > 100 else [(root.width*0.1)/root.width, (root.height*0.03)/root.height]
+        font_size: 20 if root.top > 400 else 12 if root.top > 200 else 15 if root.top > 100 else 10 if root.top > 30 else 5
+        on_press: root.takeFile()
+
+    Button:
+        text: "File 2"
+        pos_hint: {'right': 0.99, 'y': 0.01}
+        size_hint:[(root.width*0.2)/root.width, (root.height*0.06)/root.height] if root.top > 100 else [(root.width*0.1)/root.width, (root.height*0.03)/root.height]
+        font_size: 20 if root.top > 400 else 12 if root.top > 200 else 15 if root.top > 100 else 10 if root.top > 30 else 5
+        on_press: root.takeFile()
