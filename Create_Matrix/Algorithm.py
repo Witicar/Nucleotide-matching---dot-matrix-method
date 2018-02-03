@@ -2,7 +2,7 @@ import numpy as np
 
 
 def matrix_create(nucleotide_array_one, nucleotide_array_two):
-    matrix = np.zeros((len(nucleotide_array_one),len(nucleotide_array_two)))
+    matrix = np.zeros((len(nucleotide_array_one), len(nucleotide_array_two)))
     return matrix
 
 
